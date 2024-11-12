@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Generator</title>
+</head>
+<body>
+    <h1>Generate an Image</h1>
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% endif %}
+    <form method="post">
+        <label for="token">Token:</label><br>
+        <input type="text" id="token" name="token" required><br><br>
+
+        <label for="modelId">Model ID:</label><br>
+        <input type="text" id="modelId" name="modelId" required><br><br>
+
+        <label for="prompt">Prompt:</label><br>
+        <input type="text" id="prompt" name="prompt" required><br><br>
+
+        <label for="temperature">Temperature:</label><br>
+        <input type="text" id="temperature" name="temperature" required><br><br>
+
+        <input type="submit" value="Generate Image">
+    </form>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Generated Image</title>
+</head>
+<body>
+    <h1>Your Generated Image</h1>
+    <img src="{{ url_for('static', filename=filename) }}" alt="Generated Image"><br><br>
+    <a href="{{ url_for('static', filename=filename) }}" download>Download Image</a><br><br>
+    <a href="{{ url_for('index') }}">Generate Another Image</a>
+</body>
+</html>
